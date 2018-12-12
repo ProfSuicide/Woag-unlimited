@@ -2,3 +2,4 @@
 #include <string>
 #include <time.h>
 #include <cstlib>
+#include <SSFML/Graphics.hpp>
