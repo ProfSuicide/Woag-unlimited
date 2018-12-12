@@ -4,6 +4,6 @@
 #include <cstlib>
 #include <SSFML/Graphics.hpp>
 using namespace std;
-int main
+int main()
 {
 }
