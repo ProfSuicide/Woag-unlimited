@@ -12,11 +12,7 @@ class Player{
   void setHealth(int userHealth);
   void setWeapon(int userWeapon);
   void setDamage(int userDamage);
-  
-  
-  
-  
-  
+  string inventory[3];
   private:
   string name;
   int health;
