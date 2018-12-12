@@ -15,7 +15,7 @@ Player::setHealth(int userHealth){
 Player::setWeapon(int userWeapon){
   currentWeapon = userWeapon;
 }
-Player::setDamage(int userDamage){
+Player::setDamage(int userDamage){ // damage from player's weapon 
   weaponDamage = userDamage;
 }
 
