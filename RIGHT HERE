@@ -2,7 +2,7 @@
 #include <string>
 #include <time.h>
 #include <cstlib>
-#include <SSFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 using namespace std;
 using namespace sf;
 int main()
