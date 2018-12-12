@@ -6,11 +6,18 @@
 using namespace std;
 using namespace sf;
 
-class Player
+class Player{
+  public:
+  
+  
+  
+  
+  
+  
+  private:
+  
+  
+};
 
   
-  
-  
-  
-  
-  #endif
+#endif
