@@ -6,7 +6,7 @@ using namespace std;
 
 Player::Player(){ // default constructor 
   name = "stranger";
-  health = 10;
+  health = 100;
 }
 void Player::setName(string userName){ 
   name = userName;
