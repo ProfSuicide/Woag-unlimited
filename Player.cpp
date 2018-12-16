@@ -8,30 +8,30 @@ Player::Player(){ // default constructor
   name = "stranger";
   health = 10;
 }
-Player::setName(string userName){ 
+void Player::setName(string userName){ 
   name = userName;
 }
-Player::setHealth(int userHealth){
+void Player::setHealth(int userHealth){
   health = userHealth;
 }
-Player::setWeapon(int userWeapon){
+void Player::setWeapon(int userWeapon){
   currentWeapon = userWeapon;
 }
-Player::setDamage(int damageAmount){ // damage from player's weapon 
+void Player::setDamage(int damageAmount){ // damage from player's weapon 
   weaponDamage = damageAmount;
 }
 
 
 
-Player::getName() const{
+string Player::getName() const{
   return name;
 }
-Player::getHealth() const{
+int Player::getHealth() const{
   return health;
 }
-Player::getWeapon() const{
+int Player::getWeapon() const{
   return currentWeapon;
 }
-Player::getDamage() const{
+int Player::getDamage() const{
   return weaponDamage;
 }
