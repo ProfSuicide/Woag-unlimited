@@ -6,11 +6,22 @@
 //Usage:  Entertainment
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <time.h>
 #include <cstlib>
+#include <Windows.h>
 
 using namespace std;
+
+void print(string str) // print function to output text with a time delay for each character
+{
+    for (int i = 0; i < str.size(); ++i)
+    {
+        cout << str[i];
+        Sleep(50);
+    }
+}
 
 void playerQuestAccepted(){
   cout << "Oh thank you so much helping me! \nYou should take a look around town before you head out on your journey!" << endl;
