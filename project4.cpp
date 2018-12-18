@@ -9,11 +9,9 @@
 #include <string>
 #include <time.h>
 #include <cstlib>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
 
 using namespace std;
-using namespace sf;
+
 
 int main()
 {
