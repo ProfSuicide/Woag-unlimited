@@ -12,6 +12,12 @@
 
 using namespace std;
 
+void playerQuestAccepted(){
+  cout << "Oh thank you so much helping me! You should take a look around town before you head out on your journey!" << endl;
+}
+void playerQuestDenied(){
+  cout << "You will save the princess for me! You will fight the sorcerer and you will either succeed or die trying!" << endl;
+}
 
 int main()
 {
