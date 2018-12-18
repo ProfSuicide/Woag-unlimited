@@ -13,11 +13,18 @@
 using namespace std;
 
 void playerQuestAccepted(){
-  cout << "Oh thank you so much helping me! You should take a look around town before you head out on your journey!" << endl;
+  cout << "Oh thank you so much helping me! \nYou should take a look around town before you head out on your journey!" << endl;
 }
 void playerQuestDenied(){
-  cout << "You will save the princess for me! You will fight the sorcerer and you will either succeed or die trying!" << endl;
+  cout << "You will save the princess for me! \nYou will fight the sorcerer and you will either succeed or die trying!" << endl;
 }
+
+void weaponsmithIntro(){
+  cout << "Aye! I’ve heard the good news. You’re here to help us save the princess. "<< endl;
+  cout << "My name is Grimbow and I can’t begin to tell you how grateful we are for \nyou to help us get this Dagan the Duke out of our town!" << endl;
+  cout << "He strolls into town a fortnite ago and demands free food and shelter along with help saving the princess. " << endl;
+  
+
 
 int main()
 {
