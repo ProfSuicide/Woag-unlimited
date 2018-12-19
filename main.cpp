@@ -27,6 +27,12 @@ int main()
     weapon[0]=0;
     weapon[1]=0;
     weapon[2]=0;
+    //Enemy Class 
+    //Player Enemy(
+    
+    
+    
+    
     
     int weaponLand=rand() % 20 + 1; 
     int enemyLand=rand() % 20 + 1; 
