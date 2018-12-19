@@ -1,5 +1,5 @@
 //File: project4.cpp
-//Name: Ryan Gonzalez,
+//Name: Jake Dunbar, Alex Furlong, Ryan Gonzalez
 //Date: 12/19/2018
 //Course: CompSci 1
 //Description:  This program will 
@@ -39,6 +39,11 @@ void weaponsmithIntro(){
 
 int main()
 {
+  const int weaponSize=3;
+  int weapon[weaponSize];
+  weapon[0]=0;
+  weapon[1]=0;
+  weapon[2]=0;
   
   return 0;
 }
