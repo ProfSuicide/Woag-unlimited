@@ -24,7 +24,6 @@ class Player
         int getHealth() const;               // returns health
         int getWeapon() const;               // returns currentWeapon
         int getDamage() const;               // returns weaponDamage
-        string inventory[3];                 // string array for player weapons 
     private:
         string name;
         string response;
