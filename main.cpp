@@ -17,19 +17,24 @@ using namespace std;
 
 int main()
 {
+    srand (time(NULL));
     string playerName;
     string userResponse;
     bool answer = false;
-    
-    srand (time(NULL));
+    string enemyName="Sorcerer";
+    enemyDamage=rand() % 10 + 4;
+    enemyHealth=150;
+
     const int weaponSize=3;
     int weapon[weaponSize];
     weapon[0]=0;
     weapon[1]=0;
     weapon[2]=0;
     //Enemy Class 
-    //Player Enemy(
-    
+    Player Enemy(Sorcerer, 150)
+    Enemy.setName(enemyName);
+    Enemy.setDamage(enemyDamage);
+    Enemy.setHealth(enemyHealth);
     
     
     
