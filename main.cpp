@@ -73,15 +73,6 @@ int main()
         // 3. go to the sorcerer
         Robin.playerRoll();
         }
-    
-    
-  srand (time(NULL));
-  const int weaponSize=3;
-  int weapon[weaponSize];
-  weapon[0]=0;
-  weapon[1]=0;
-  weapon[2]=0;
-  int weaponland=rand() % 20 + 1;
   
   return 0;
 }
