@@ -22,8 +22,8 @@ int main()
     string userResponse;
     bool answer = false;
     string enemyName="Sorcerer";
-    enemyDamage=rand() % 10 + 4;
-    enemyHealth=150;
+    int enemyDamage=rand() % 10 + 4;
+    int enemyHealth=150;
 
     const int weaponSize=3;
     int weapon[weaponSize];
