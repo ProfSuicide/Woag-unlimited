@@ -14,17 +14,67 @@
 
 using namespace std;
 
-void print(string str) // print function to output text with a time delay for each character
-{
-    for (int i = 0; i < str.size(); ++i)
-    {
-        cout << str[i];
-        Sleep(50);
-    }
-}
-
 int main()
 {
+    string playerName;
+    string userResponse;
+    bool answer = false;
+    
+    srand (time(NULL));
+    const int weaponSize=3;
+    int weapon[weaponSize];
+    weapon[0]=0;
+    weapon[1]=0;
+    weapon[2]=0;
+    
+    int weaponland=rand() % 20 + 1; 
+
+    StoryText text; // creates object to output text
+
+    text.print("------------ RPG Game --------\n\n"); // feel free to change the title & formatting if u want to
+    text.print("Enter your character's name: ");
+    cin >> playerName;
+    cout << endl;
+
+    Player Robin(playerName, 100); // creates player object
+    Robin.setName(playerName);
+
+    system("cls"); // clears the screen
+
+    text.print("\n1482 A.D. --- "); 
+    text.print(Robin.getName());
+    text.readFile("text/Intro.txt"); 
+    text.readFile("text/Quest.txt"); 
+
+    while(answer == false)
+    {
+        cout << "Enter 'yes' or 'no': ";
+        cin >> userResponse;
+
+        if(userResponse == "yes")
+        {
+            text.readFile("text/QuestAccepted.txt");
+            answer = true;
+        }
+        else if(userResponse == "no")
+        {
+            text.readFile("text/QuestDeclined.txt");
+            answer = true;
+        }
+        else
+        {
+            text.print("wot the hek, not an option...");
+        }
+    }
+
+    if(answer == true){
+        // 1. go to weaponsmith intro
+        // 2. go to the Inn intro
+        // 3. go to the sorcerer
+        Robin.playerRoll();
+        }
+    
+    
   srand (time(NULL));
   const int weaponSize=3;
   int weapon[weaponSize];
