@@ -18,7 +18,6 @@ class Player
         void setHealth(int userHealth);          // between 1-100
         void setWeapon(int userWeapon);
         void setDamage(int damageAmount);
-        void playerRoll();
         string getName() const;              // returns name
         string getResponse() const;          // returns response
         int getHealth() const;               // returns health
