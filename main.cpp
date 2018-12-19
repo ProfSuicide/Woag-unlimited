@@ -28,7 +28,8 @@ int main()
     weapon[1]=0;
     weapon[2]=0;
     
-    int weaponland=rand() % 20 + 1; 
+    int weaponLand=rand() % 20 + 1; 
+    int enemyLand=rand() % 20 + 1; 
 
     StoryText text; // creates object to output text
 
