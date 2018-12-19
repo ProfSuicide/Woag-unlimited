@@ -1,27 +1,36 @@
-#ifndef PLAYER_H // header guard 
+#ifndef PLAYER_H
 #define PLAYER_H
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
-using namespace sf; // this is for sfml 
 
-class Player{
-  public:
-    void setName(string userName);
-    void setHealth(int userHealth);   // between 1-100 
-    void setWeapon(int userWeapon);   
-    void setDamage(int damageAmount); 
-    string getName() const;           // returns name
-    int getHealth() const;            // returns health 
-    int getWeapon() const;            // returns currentWeapon 
-    int getDamage() const;            // returns weaponDamage
-    string inventory[3];
-  private:
-    string name;
-    int health;
-    int currentWeapon;
-    int weaponDamage; 
-};  
-#endif
+class Player
+{
+    public:
+        Player();                                // default constructor
+        Player(string userName, int userHealth); // overloaded constructor
+        void setName(string userName);
+        void setResponse(string userResponse);   // stores any answers from the user
+        void setHealth(int userHealth);          // between 1-100
+        void setWeapon(int userWeapon);
+        void setDamage(int damageAmount);
+        void playerRoll();
+        string getName() const;              // returns name
+        string getResponse() const;          // returns response
+        int getHealth() const;               // returns health
+        int getWeapon() const;               // returns currentWeapon
+        int getDamage() const;               // returns weaponDamage
+        string inventory[3];                 // string array for player weapons 
+    private:
+        string name;
+        string response;
+        int health;
+        int currentWeapon;
+        int weaponDamage;
+};
+
+#endif // PLAYER_H
