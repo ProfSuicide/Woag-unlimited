@@ -4,7 +4,8 @@
 //Course: CompSci 1
 //Description:  This program will 
 //Usage:  Entertainment
-
+#include "StoryText.h"
+#include "Player.h"
 #include <iostream>
 #include <fstream>
 #include <string>
