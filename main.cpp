@@ -67,12 +67,13 @@ int main()
         }
     }
 
-    if(answer == true){
+    if(answer == true)
+    {
         // 1. go to weaponsmith intro
         // 2. go to the Inn intro
         // 3. go to the sorcerer
         Robin.playerRoll();
-        }
+    }
   
   return 0;
 }
