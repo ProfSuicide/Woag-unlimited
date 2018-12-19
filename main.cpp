@@ -7,11 +7,11 @@
 #include "StoryText.h"
 #include "Player.h"
 #include <iostream>
-#include <fstream>
+#include <fstream> // allows us to read files 
 #include <string>
 #include <time.h>
 #include <cstlib>
-#include <Windows.h>
+#include <windows.h>
 
 using namespace std;
 
