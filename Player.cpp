@@ -36,18 +36,7 @@ void Player::setDamage(int damageAmount) // damage from player's weapon
 {
     weaponDamage = damageAmount;
 }
-void Player::playerRoll() // generates two random dice rolls between 1-20
-{
-    char x  = '1';
-    srand(time(0));
 
-    for(int i = 0; i < 2; ++i){
-        int diceRoll = rand() % 20 + 1;
-        cout <<"Roll number " << x << " was a " << diceRoll;
-        cout << endl << endl;
-        x++;
-    }
-}
 //--------- getter functions ------------
 string Player::getName() const
 {
