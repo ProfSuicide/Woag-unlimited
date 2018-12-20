@@ -22,6 +22,9 @@ int main()
     string userResponse;
     bool answer = false;
     string enemyName="Sorcerer";
+    int damageTaken;
+    int damageBlocked;
+    int dodgeRoll;
     int enemyDamage=rand() % 10 + 4;
     int enemyHealth=150;
 
