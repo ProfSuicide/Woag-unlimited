@@ -27,7 +27,7 @@ int main()
     int dodgeRoll;
     int enemyDamage=rand() % 10 + 4;
     int enemyHealth=150;
-
+    bool
     const int weaponSize=3;
     int weapon[weaponSize];
     weapon[0]=0;
