@@ -23,6 +23,7 @@ class Player
         int getHealth() const;               // returns health
         int getWeapon() const;               // returns currentWeapon
         int getDamage() const;               // returns weaponDamage
+        bool playerShield;
     private:
         string name;
         string response;
