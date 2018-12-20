@@ -12,10 +12,14 @@ if((enemyLand>=10) && (enemyLand<=19){
   cout << "The Sorcerer lands a hit!" << endl;
   enemyDamage=rand() % 10 + 4;
 }
-if((enemyLand=<9) && (enemyLand>=1)){
+if(enemyLand=<9){
   cout << "The Sorcerer misses!" << endl;
 }
-if(enemyLand==1){
+battleTurn=0;
+}
+if(
+if(battleTurn==0){
+  
   
    
   
