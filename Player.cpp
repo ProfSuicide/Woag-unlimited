@@ -24,9 +24,8 @@ void Player::setResponse(string userResponse)
 {
     response = userResponse;
 }
-void Player::setHealth(int userHealth)
-{
-    health = userHealth;
+void Player::setHealth(int updateHealth){ // updates player's health, updateHealth parameter takes in damage amount as an argument
+    health -= updateHealth;
 }
 void Player::setWeapon(int userWeapon)
 {
