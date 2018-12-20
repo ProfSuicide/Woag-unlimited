@@ -16,6 +16,7 @@ Player::Player(string userName, int userHealth) // overloaded constructor
     name = userName;
     health = userHealth;
 }
+//--------- setter functions ------------
 void Player::setName(string userName)
 {
     name = userName;
