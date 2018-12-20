@@ -1,3 +1,4 @@
+int battleChoice;
 int battleTurn=1;
 int battleActive=1;
 while(battleActive==1){
@@ -17,7 +18,18 @@ if(enemyLand=<9){
 }
 battleTurn=0;
 }
-if(
+if(enemyLand<=10){
+  cout << "Would you like to dodge(1) or block(2)?" << endl;
+  cin >> battleChoice;
+}
+if
+while((battleChoice!=1) || (battleChoice!=2)){// 
+  cout << "That was not a valid choice. Would you like to dodge(1) or block(2)?" << endl;
+  cin >> battleChoice;
+}
+if(battleChoice==1){
+  
+
 if(battleTurn==0){
   
   
