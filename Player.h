@@ -15,7 +15,7 @@ class Player
         Player(string userName, int userHealth); // overloaded constructor
         void setName(string userName);
         void setResponse(string userResponse);   // stores any answers from the user
-        void setHealth(int userHealth);          // between 1-100
+        void setHealth(int updateHealth);        // updates health when player takes damage
         void setWeapon(int userWeapon);
         void setDamage(int damageAmount);
         string getName() const;              // returns name
