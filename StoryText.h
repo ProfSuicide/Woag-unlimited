@@ -5,7 +5,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
-#include <Windows.h>
+#include <windows.h>
 
 
 using namespace std;
@@ -13,9 +13,9 @@ using namespace std;
 class StoryText
 {
     public:
-        StoryText();                    // default constructor
-        void readFile(string fileName); // function that reads files 
-        void print(string str);         // time delay function
+        StoryText();
+        void readFile(string fileName);
+        void print(string str);
 
     private:
         string file;
