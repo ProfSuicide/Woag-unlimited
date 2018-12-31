@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
-#include <Windows.h>
+#include <windows.h>
 
 using namespace std;
 
@@ -21,7 +21,7 @@ void StoryText::readFile(string fileName)
         exit(EXIT_FAILURE);
     }
 
-    char word[500];   // if the file can be opened this will execute
+    char word[10000]; // if the file can be opened this will execute
     storyText >> word;
     while(storyText.good())
     {
@@ -38,6 +38,6 @@ void StoryText::print(string str) // print function to output text with a time d
     for (int i = 0; i < str.size(); ++i)
     {
         cout << str[i];
-        Sleep(50); // feel free to change this if you think it's too slow or too fast
+        Sleep(50);  // feel free to change this if you think it's too slow or too fast
     }
 }
