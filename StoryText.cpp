@@ -38,6 +38,6 @@ void StoryText::print(string str) // print function to output text with a time d
     for (int i = 0; i < str.size(); ++i)
     {
         cout << str[i];
-        Sleep(50);  // feel free to change this if you think it's too slow or too fast
+        Sleep(50);  // feel free to change this if you think the text outputs too slow or too fast
     }
 }
