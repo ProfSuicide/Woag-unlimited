@@ -13,12 +13,12 @@ StoryText::StoryText()
 }
 void StoryText::readFile(string fileName)
 {
-    ifstream storyText;
-    storyText.open(fileName);
+    ifstream storyText;       // creates input file stream object 
+    storyText.open(fileName); // opens file 
 
-    if(!storyText.is_open()) // closes the window if the file cannot be opened
+    if(!storyText.is_open())  // checks if the file is not opened
     {
-        exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);   // closes the window if the file not opened
     }
 
     char word[10000]; // if the file can be opened this will execute
